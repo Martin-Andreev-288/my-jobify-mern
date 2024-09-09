@@ -20,13 +20,6 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Hello world');
 });
-app.post(
-    '/api/v1/test',
-    (req, res) => {
-        const { name } = req.body;
-        res.json({ msg: `hello ${name}` });
-    }
-);
 
 app.use('/api/v1/jobs', jobRouter);
 
