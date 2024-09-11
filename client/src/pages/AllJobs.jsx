@@ -3,7 +3,7 @@ import { JobsContainer, SearchContainer } from "../components";
 import customFetch from "../utils/customFetch";
 import { useLoaderData } from "react-router-dom";
 import { useContext, createContext } from "react";
-// Setup all jobs context (as continue to the previous screenshot)
+
 export const loader = async ({ request }) => {
   try {
     const { data } = await customFetch.get("/jobs");
