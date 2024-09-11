@@ -38,8 +38,6 @@ const Job = ({
           <Link to={`../edit-job/${_id}`} className="btn edit-btn">
             Edit
           </Link>
-          {/* with action attribute we provide where that functionality is
-          going to be handled */}
           <Form method="post" action={`../delete-job/${_id}`}>
             <button type="submit" className="btn delete-btn">
               Delete
