@@ -1,4 +1,29 @@
-const AllJobs = () => {
-  return <h1>AllJobs Page</h1>;
+import { toast } from "react-toastify";
+import { JobsContainer, SearchContainer } from "../components";
+import customFetch from "../utils/customFetch";
+import { useLoaderData } from "react-router-dom";
+
+export const loader = async ({ request }) => {
+  try {
+    const { data } = await customFetch.get("/jobs");
+    return {
+      data,
+    };
+  } catch (error) {
+    toast.error(error?.response?.data?.msg);
+    return error;
+  }
 };
+
+const AllJobs = () => {
+  const { data } = useLoaderData();
+
+  return (
+    <>
+      <SearchContainer />
+      <JobsContainer />
+    </>
+  );
+};
+
 export default AllJobs;
