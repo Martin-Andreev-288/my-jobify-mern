@@ -1,9 +1,6 @@
 # My Jobify Mern
 
-**Disclaimer**: This project is based on the MERN 2024 Edition - MongoDB, Express, React and NodeJS John Smilga's course. The primary purpose of this repository is for personal learning and practice. All credit for the original design and concepts goes to John Smilga. This repository serves as my implementation of the project following the course.
-
-## Original Course
-This project is based on the course by John Smilga: [MERN 2024 Edition - MongoDB, Express, React and NodeJS](https://www.udemy.com/course/mern-stack-course-mongodb-express-react-and-nodejs).
+**Disclaimer**: This project is based on the [MERN 2024 Edition - MongoDB, Express, React and NodeJS](https://www.udemy.com/course/mern-stack-course-mongodb-express-react-and-nodejs) John Smilga's course. The primary purpose of this repository is for personal learning and practice. All credit for the original design and concepts goes to John Smilga. This repository serves as my implementation of the project following the course.
 
 ## Overview
 Welcome to My Jobify App! You can track your job applications, view stats, and manage your profile easily with this app. Explore the app with sample data before signing up. Perfect for staying organized in your job search.
